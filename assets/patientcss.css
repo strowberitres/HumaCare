@@ -1,0 +1,91 @@
+/* Title Styling */
+h2.title {
+    color: #154360;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px; /* Reduced from 20px */
+    text-align: center;
+    padding: 1%; /* Reduced from 2% */
+}
+
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 10px auto; /* Add small margin-top */
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Table Header */
+thead {
+    background: #154360;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Alternating Row Colors */
+tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tbody tr:hover {
+    background: #d6eaf8;
+    transition: 0.3s;
+}
+
+/* Delete Button */
+button.deletePatient {
+    background: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button.deletePatient:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Photo Column */
+td img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button.deletePatient {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+.container {
+    padding-top: 10px; /* Reduce top padding */
+}
